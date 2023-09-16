@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- data-theme = 'cupcake' -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind css && Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+        button:focus{
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body class="container mx-auto">
+    <!-- Header section -->
+    <header class="py-3">
+        <!-- Navbar -->
+        <nav class="py-3">
+            <div class="bg-base-100 flex justify-between px-2 lg:px-0">
+                <div class="">
+                  <img class="w-[170px] h-10" src="./images/Logo.png" alt="Logo">
+                </div>
+                <div class="">
+                  <button id="sortButton" onclick="sortbyViews()" class="text-base font-medium bg-gray-300 text-black py-1 px-3 rounded-md">Sort by view</button>
+                </div>
+                <div class="">
+                 <a href="./blog.html" class="font-medium text-base bg-[#FF1F3D] py-1 px-4 text-white rounded-md">Blog</a>
+                </div>
+              </div>
+        </nav>
+        <hr />
+        <div class="flex justify-center items-center py-5 gap-2" id="catagory"></div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 px-2" id="tubePost"></div>
+    </main>
+    <script src="pHeroTube.js"></script>
+</body>
+</html>

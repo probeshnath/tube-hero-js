@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Questions</title>
+    <!-- Tailwind css && Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+        P{
+            font-size: 16px;
+            padding: 10px 0px;
+        }
+        
+    </style>
+</head>
+<body class="">
+    <section class="container mx-auto px-3 py-5">
+        <h2 class="font-extrabold text-xl pt-3"><span>Question 1 :</span> Discuss the scope of var, let, and const</h2>
+
+        <p> 
+            We can define or declare variable different way in JavaScript. Like <span class="font-bold">Var</span>,<span class="font-bold">Let</span>,<span class="font-bold">Const</span>.
+            Let's discuss the scope of each:
+        </p>
+
+       <div>
+            <h2 class="font-medium text-lg">Var</h2>
+            <p>
+                when Variables declared with <span class="font-bold">var</span>  in function-scoped, it's means it's accessible only within the function.
+                We can console log or return before initialition, we will get  <span class="font-bold">undefine</span>.
+                If a <span class="font-bold">var</span>  variable is declared outside of any function or block, it becomes a global variable and is accessible throughout the entire script.
+                <span class="font-bold">var</span>  does not have block-level scope. Variables declared with <span class="font-bold">var</span>  inside a block are still accessible outside of that block.
+            </p>
+       </div>
+
+       <div>
+        <h2 class="font-medium text-lg">Let</h2>
+        <p>
+            When variables declared with <span class="font-bold">let</span> that is block-scoped,  it's means that are accessible only within the block.
+            When variables are hoisted to the top of their containing block but that are not initialized. We will get error. We Cannot access before initialized.
+            Whan variables declared with <span class="font-bold">let</span> are not automatically added to the global scope. They are limited to the block or function.
+        </p>
+       </div>
+
+       <div>
+        <h2 class="font-medium text-lg">Const</h2>
+        <p>
+            <span class="font-bold">let</span> , <span class="font-bold">const</span> variables are block-scoped, it's means that are accessible only within the block. 
+             When variables declared with <span class="font-bold">const</span> cannot be reassigned after they are initialized. However, the content of objects and arrays declared with const can be modified.
+        </p>
+       </div>
+
+       <p>
+       We Should use <span class="font-bold">let</span> and <span class="font-bold">const</span> for variable declarations due to their more predictable scoping and behavior. <span class="font-bold">let</span> should be used when the variable's value may change, while const should be used when the value should remain constant. <span class="font-bold">Var</span> should generally be avoided in favor of <span class="font-bold">let</span> and <span class="font-bold">const</span> to prevent unexpected behavior and scope-related issues.
+       </p>
+
+
+
+    </section>
+    <section class="container mx-auto px-3 py-5">
+        <h2 class="font-extrabold text-xl pt-3"><span>Question 2 :</span>Tell us the use cases of null and undefined</h2>
+        <p>
+            <span class="font-bold"></span>null and undefined are two special values in JavaScript that are often used to represent the absence of a meaningful value, but it's use in  different contexts. There are the few common use cases of null and undefined:
+        </p>
+        <p> 
+            We can explicitly assign <span class="font-bold">null</span> to a variable to indicate that it intentionally has no value and it is empty.
+            <span class="font-bold">null</span> can be used to clear the value of a variable or property. Sometimes in functions, returning <span class="font-bold">null</span> can signify that no meaningful result is available.
+        </p>
+
+        <p>
+            <span class="font-bold">undefined</span> typically represents the absence of an assigned value. Variables that are declared but not initialized, or object properties that are not defined, then we will get an <span class="font-bold">undefined</span> value.
+            When we don't pass any value in a function parameter and we called this function, then it becomes <span class="font-bold">undefined</span>.
+            When we want to access an array element with an index that doesn't exist, Then we will get <span class="font-bold">undefined</span>.
+        </p>
+       
+
+
+
+    </section>
+    <section class="container mx-auto px-3 py-5">
+        <h2 class="font-extrabold text-xl pt-3"><span>Question 3 :</span> What do you mean by REST API?</h2>
+     
+    <p>
+         A <span class="font-bold">REST API</span> is a set of rules for making web services. It uses common actions like GET (get data), POST (create data), PUT (update data), and DELETE (delete data) to interact with resources, which can be anything like data or services. Each resource has a unique address (URI) to access it. REST APIs are stateless, meaning they don't remember past requests.
+         Resources can have different formats, like JSON or XML. It also designed to be safe and repeatable. REST allows for layers in the system, like proxies, and follows a client-server structure. It's widely used in web and mobile apps to communicate with remote servers because it's simple, scalable, and works well with HTTP, making it a top choice for creating APIs.
+    </p>
+        
+    </section>
+    
+</body>
+</html>
